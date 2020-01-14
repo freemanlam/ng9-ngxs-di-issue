@@ -1,3 +1,4 @@
+import { Injectable } from "@angular/core";
 import { State } from '@ngxs/store';
 import { testService } from './test.service';
 
@@ -11,6 +12,7 @@ export interface TestStateModel {
     oh: '123'
   }
 })
+@Injectable()
 export class TestState {
 
   constructor(
